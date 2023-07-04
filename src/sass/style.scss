@@ -1,0 +1,33 @@
+@import "global/_fonts.scss";
+@import "global/_normalize.scss";
+@import "global/_variables.scss";
+@import "global/_global.scss";
+@import "global/mixins.scss";
+
+
+@import "blocks/_page.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_navigation.scss";
+@import "blocks/_header.scss";
+@import "blocks/_intro.scss";
+@import "blocks/_main-description.scss";
+@import "blocks/_advantages.scss";
+@import "blocks/_services.scss";
+@import "blocks/_searching.scss";
+@import "blocks/_map.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_social.scss";
+@import "blocks/_copyright.scss";
+@import "blocks/_gallery.scss";
+@import "blocks/_gallery-video.scss";
+@import "blocks/_catalog-description.scss";
+@import "blocks/_review.scss";
+@import "blocks/_introduce.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_impression.scss";
+@import "blocks/_attractions.scss";
+@import "blocks/_checkbox.scss";
+@import "blocks/_textfield.scss";
+@import "blocks/_form.scss";
+@import "blocks/_emotions.scss";
+@import "blocks/_modal.scss";

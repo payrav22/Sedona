@@ -1,0 +1,179 @@
+.gallery {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+        width: 100%;
+    }
+}
+
+.gallery__list {
+    margin-bottom: 50px;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.gallery__item {
+    margin-bottom: 22px;
+    margin-bottom: 38px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background-color: #E5E5E5;
+        position: absolute;
+        top: 435px;
+        left: -5vw;
+
+        @include tablet {
+            content: "";
+            background: none;
+            width: 100%;
+        }
+    }
+
+    @include tablet {
+        border: 0;
+        margin-bottom: 0;
+    }
+}
+
+.gallery__item--vast {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: span 2;
+    }
+
+    @include desktop {
+        grid-column: span 3;
+    }
+}
+
+
+
+
+.gallery__description {
+    @include tablet {
+        height: 80px;
+        margin-top: -5px;
+        background-color: #f2f2f2;
+        display: flex;
+        padding-left: 20px;
+    }
+
+    @include desktop {
+        margin-top: -85px;
+        background-color: rgba(0, 0, 0, .3);
+        position: relative;
+        width: 100%;
+    }
+}
+
+.gallery__description--vast {
+    @include desktop {
+        width: 100%;
+        margin-top: -80px;
+    }
+}
+
+.gallery__description--road {
+    @include tablet {
+        background-color: #EAEAEA;
+    }
+
+    @include desktop {
+        background-color: rgba(0, 0, 0, .3);
+    }
+}
+
+.gallery__image {
+    width: 100%;
+    height: 268px;
+    object-fit: cover;
+
+    @include desktop {
+        width: 100%;
+    }
+}
+
+
+.gallery__image--vast {
+    @include tablet {
+        height: 400px;
+    }
+}
+
+.gallery__blockquote {
+    margin-left: 1px;
+}
+
+.gallery__title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-style: normal;
+
+    @include desktop {
+        color: #FFFFFF;
+    }
+}
+
+.gallery__text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+
+    @include tablet {
+        margin-top: -1px;
+    }
+
+    @include desktop {
+        color: white;
+    }
+
+}
+
+
+.like__button {
+    border: 0;
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+
+    @include tablet {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    @include desktop {
+        color: white;
+    }
+}
+
+.like__icon {
+    opacity: 0.3;
+    margin-right: 5px;
+
+    @include desktop {
+        opacity: 1;
+    }
+}

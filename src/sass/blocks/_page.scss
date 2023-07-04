@@ -1,0 +1,31 @@
+.page {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "PT Sans", sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  &--modal {
+      overflow: hidden;
+      pointer-events: none;
+      padding-right: 8px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $primary-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #81b2d3;
+  }
+}

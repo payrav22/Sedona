@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    padding-bottom: 56px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-color: white;
+
+    @include tablet {
+        padding-bottom: 0;
+    }
+}
+
+.header__logo {
+    position: absolute;
+    top: calc(100% - 56px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include tablet {
+        top: 0;
+    }
+}

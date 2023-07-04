@@ -1,0 +1,54 @@
+.emotions {
+    text-align: center;
+    margin-top: 20px;
+
+    @include tablet {
+        grid-column: span 2;
+    }
+}
+
+.emotions__legend {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+        width: 680px;
+        font-size: 21px;
+        margin-bottom: 22px;
+        background-image: url(../img/line-tablet.png);
+        background-repeat: no-repeat;
+        background-position: 14px 15px;
+    }
+
+    @include desktop {
+        width: 960px;
+        background-image: url(../img/line-desktop.png);
+        background-position: 0px;
+    }
+}
+
+.emotions__textarea {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    border: 0;
+    background-color: #F2F2F2;
+    padding-left: 21px;
+    padding-top: 13px;
+    margin-top: 15px;
+    resize: none;
+    width: 280px;
+
+    @include tablet {
+        width: 650px;
+    }
+
+    @include desktop {
+        width: 960px;
+    }
+}

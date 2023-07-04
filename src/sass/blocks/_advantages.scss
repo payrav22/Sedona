@@ -1,0 +1,142 @@
+.advantages__list {
+    background-color: #EEEEEE;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.advantages__content {
+    text-align: center;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.advantages__item--city {
+    background-color: #FFFFFF;
+
+    @include tablet {
+        grid-column: span 3;
+    }
+}
+
+.advantages__item--bridge {
+    text-align: center;
+    background-color: #FFFFFF;
+    margin-bottom: -6px;
+    margin-top: -18px;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column: span 3;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+.advantages__description {
+    background-color: $blue;
+    height: 211px;
+    padding: 39px 15px 35px 15px;
+
+
+    @include tablet {
+        height: 260px;
+        padding: 42px 34px;
+        width: 100%;
+    }
+
+    @include desktop {
+        padding: 50px 75px;
+    }
+}
+
+.advantages__description--bridge {
+    @include tablet {
+        order: 2;
+    }
+}
+
+
+.advantages__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+
+    @include tablet {
+        font-size: 21px;
+    }
+}
+
+.advantages__title--city,
+.advantages__title--bridge {
+    color: #FFFFFF;
+}
+
+.advantages__number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.advantages__number--city,
+.advantages__number--bridge {
+    color: #FFFFFF;
+}
+
+
+
+.advantages__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.advantages__text--city,
+.advantages__text--bridge {
+    color: #FFFFFF;
+}
+
+.advantages__image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.advantages__item {
+    padding: 26px;
+    border-top: 2px solid #D6D6D6;
+    background-color: #EEEEEE;
+    text-align: center;
+    height: 170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @include tablet {
+        height: 256px;
+        margin-top: 1px;
+        width: 100%;
+        border: 0;
+        padding-top: 42px;
+        padding-left: 39px;
+        padding-right: 39px;
+
+        &:last-child {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+}

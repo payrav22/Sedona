@@ -1,0 +1,39 @@
+.catalog-description {
+    height: 138px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    
+    @include tablet {
+        border: 0;
+        margin-top: 50px;
+        width: 450px;
+    }
+}
+
+.catalog-description__title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include tablet {
+        font-size: 30px;
+    }
+}
+
+.catalog-description__text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+
+    @include tablet {
+        margin-top: 30px;
+    }
+}

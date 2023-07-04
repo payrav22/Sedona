@@ -1,0 +1,185 @@
+.intro {
+  position: relative;
+  height: 390px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+
+  @include tablet {
+    height: 518px;
+  }
+
+  @include desktop {
+    height: 518px
+  }
+}
+
+.intro__blockquote {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -18px;
+
+
+}
+
+.intro__title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+  z-index: 1;
+  margin: 0;
+
+  @include tablet {
+    font-size: 120px;
+  }
+}
+
+.intro__welcome {
+  font-family: 'Bebas Neue', sans-serif;
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+
+  @include tablet {
+    font-size: 60px;
+  }
+}
+
+.intro__gorgeous {
+  font-family: 'Dancing Script', cursive;
+  color: #766458;
+  display: block;
+  font-size: 20px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-image: url(../img/gorgeous-line.png);
+    background-repeat: no-repeat;
+    left: 18%;
+    top: 29%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-image: url(../img/gorgeous-line.png);
+    background-repeat: no-repeat;
+    left: 73%;
+    top: 29.5%;
+  }
+
+  @include tablet {
+    font-size: 30px;
+
+    &::before {
+      content: "";
+      width: 29px;
+      height: 2px;
+      left: 25%;
+      top: 27%;
+    }
+
+    &::after {
+      width: 29px;
+      height: 2px;
+      left: 68%;
+      top: 27%;
+    }
+  }
+}
+
+.intro__q {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/open-quotes-mobile.png);
+    background-repeat: no-repeat;
+    left: 11%;
+    top: 82%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/close-quotes-mobile.png);
+    background-repeat: no-repeat;
+    left: 79%;
+    top: 97%;
+
+  }
+
+  @include tablet {
+    font-size: 42px;
+    margin-top: 10px;
+
+    &::before {
+      background-image: url(../img/open-quotes-tablet.png);
+      width: 15px;
+      height: 10px;
+      left: 17%;
+      top: 77%;
+    }
+
+    &::after {
+      background-image: url(../img/close-quotes-tablet.png);
+      width: 15px;
+      height: 10px;
+      left: 75%;
+      top: 97%;
+    }
+  }
+}
+
+.intro__image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro__icon {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro--mod {
+  height: 185px;
+
+  @include tablet {
+    height: 313px;
+  }
+}

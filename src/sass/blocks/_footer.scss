@@ -1,0 +1,22 @@
+.footer {
+    height: 233px;
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 38.5px;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin-top: -20px;
+        height: 140px;
+    }
+}
+
+.footer__hashtag {
+    color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
