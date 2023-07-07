@@ -5,6 +5,8 @@
     border: none;
     position: fixed;
     pointer-events: all;
+    padding-left: 0;
+    padding-right: 0;
 
     &--success {
         max-width: 640px;
@@ -107,9 +109,8 @@
 
 .modal__p {
     background-color: #f2f2f2;
-    width: 105.2%;
+    width: 100%;
     height: 100px;
-    margin-left: -16px;
 
     @include tablet {
         height: 145px;

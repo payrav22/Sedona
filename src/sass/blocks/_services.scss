@@ -37,6 +37,11 @@
 
 .services__description {
     margin-top: -8px;
+
+    &--gift {
+        margin-left: -5px;
+    }
+
 }
 
 .services__link {
@@ -45,9 +50,9 @@
     }
 
     &--house {
-        width: 80px;
+        width: 72px;
         height: 37px;
-    
+
         @include tablet {
             width: 80px;
             height: 72px;
@@ -56,20 +61,20 @@
     }
 
     &--gift {
-        width: 80px;
+        width: 72px;
         height: 38px;
-    
+
         @include tablet {
             width: 80px;
             height: 75px;
             margin-top: 57px;
         }
     }
-    
+
     &--burger {
-        width: 80px;
+        width: 72px;
         height: 35px;
-    
+
         @include tablet {
             width: 80px;
             height: 70px;

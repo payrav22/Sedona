@@ -11,9 +11,19 @@
 .advantages__item {
     grid-column: span 3;
     background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+
+    &:last-child {
+        border-bottom: none;
+    }
 
     &--city {
         background-color: #fff;
+        border-bottom: none;
+    }
+
+    &--bridge {
+        border-bottom: none;
     }
 
     @include tablet {
@@ -40,7 +50,7 @@
 
 .advantages__description {
     padding: 25px;
-    border-bottom: 1px solid #d6d6d6;
+
     height: 190px;
     counter-increment: number;
     text-align: center;
@@ -48,7 +58,6 @@
     flex-direction: column;
     position: relative;
     justify-content: space-between;
-
 
     &::before {
         content: "— №" counter(number) " —";
