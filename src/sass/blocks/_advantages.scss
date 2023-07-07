@@ -28,6 +28,7 @@
 
     @include tablet {
         grid-column: span 1;
+        border-bottom: none;
 
         &--city {
             grid-column: span 3;
@@ -50,7 +51,6 @@
 
 .advantages__description {
     padding: 25px;
-
     height: 190px;
     counter-increment: number;
     text-align: center;
@@ -73,7 +73,6 @@
 
     &--mod {
         background-color: #81b2d3;
-        border-bottom: none;
 
         &::before {
             color: #fff;
