@@ -58,7 +58,7 @@
           <span class="intro__gorgeous">to the gorgeous</span>
           <span class="intro__title">Sedona</span>
         </h1>
-        <q class="intro__q">Because the Grand<br> Canyon sucks!</q>
+        <q class="intro__canyon">Because the Grand<br> Canyon sucks!</q>
       </blockquote>
       <img class="intro__image" src="img/back-index.png" alt="Седона" width="1200" height="518">
       <svg class="intro__icon" width="1200" height="58">
@@ -73,88 +73,103 @@
     </section>
 
     <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
       <ol class="advantages__list">
-        <li class="advantages__item--city">
+        <li class="advantages__item advantages__item--city">
           <div class="advantages__content">
-            <div class="advantages__description">
-              <b class="advantages__title advantages__title--city">Настоящий городок</b>
-              <p class="advantages__number advantages__number--city">- №1 -</p>
-              <p class="advantages__text advantages__text--city">Седона не атракцион для туристов, там течёт своя жизнь
+            <div class="advantages__description advantages__description--mod">
+              <b class="advantages__title advantages__title--mod">Настоящий городок</b>
+              
+              <p class="advantages__text advantages__text--mod">Седона не атракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <img class="advantages__image" src="./img/photo-sedona-city-desktop.png" alt="Городок Седона" width="800"
-              height="256">
+            <picture>
+              <source srcset="img/city-desktop.png" media="(min-width: 1200px)" width="800" height="256">
+              <source srcset="img/city-tablet.png" media="(min-width: 768px)" width="512" height="256">
+              <img class="advantages__img" src="img/city-mobile.png" alt="Городок Седона" width="320" height="260">
+            </picture>
           </div>
 
-          <ul class="services__list">
-            <li class="services__item">
-              <div class="services__link services__link--house">
-                <svg width="auto" height="auto">
-                  <use xlink:href="img/sprite.svg#house" />
-                </svg>
-                <span class="visually-hidden">Жилье</span>
-              </div>
-              <div class="services__description">
-                <h3 class="services__title">Жилье</h3>
-                <p class="services__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </div>
-            </li>
+          <section class="services">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <div class="services__link services__link--house">
+                  <svg width="auto" height="auto">
+                    <use xlink:href="img/sprite.svg#house" />
+                  </svg>
+                  <span class="visually-hidden">Жилье</span>
+                </div>
+                <div class="services__description">
+                  <h3 class="services__title">Жилье</h3>
+                  <p class="services__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
+              </li>
 
-            <li class="services__item services__item--gift">
-              <div class="services__link services__link--gift">
-                <svg width="auto" height="auto">
-                  <use xlink:href="img/sprite.svg#gift" />
-                </svg>
-                <span class="visually-hidden">Сувениры</span>
-              </div>
-              <div class="services__description">
-                <h3 class="services__title">Сувениры</h3>
-                <p class="services__text">Не только китайского, но и местного производства!</p>
-              </div>
-            </li>
+              <li class="services__item services__item--gift">
+                <div class="services__link services__link--gift">
+                  <svg width="auto" height="auto">
+                    <use xlink:href="img/sprite.svg#gift" />
+                  </svg>
+                  <span class="visually-hidden">Сувениры</span>
+                </div>
+                <div class="services__description">
+                  <h3 class="services__title">Сувениры</h3>
+                  <p class="services__text">Не только китайского, но и местного производства!</p>
+                </div>
+              </li>
 
-            <li class="services__item">
-              <div class="services__link services__link--burger">
-                <svg width="auto" height="auto">
-                  <use xlink:href="img/sprite.svg#burger" />
-                </svg>
-                <span class="visually-hidden">Еда</span>
-              </div>
-              <div class="services__description">
-                <h3 class="services__title">Еда</h3>
-                <p class="services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </div>
-            </li>
-          </ul>
+              <li class="services__item">
+                <div class="services__link services__link--burger">
+                  <svg width="auto" height="auto">
+                    <use xlink:href="img/sprite.svg#burger" />
+                  </svg>
+                  <span class="visually-hidden">Еда</span>
+                </div>
+                <div class="services__description">
+                  <h3 class="services__title">Еда</h3>
+                  <p class="services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </li>
 
-        <li class="advantages__item--bridge">
-          <div class="advantages__description advantages__description--bridge">
-            <b class="advantages__title advantages__title--bridge">Там есть мост Дьявола</b>
-            <p class="advantages__number advantages__number--bridge">- №2 -</p>
-            <p class="advantages__text advantages__text--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно
-            </p>
+        <li class="advantages__item advantages__item--bridge">
+          <div class="advantages__description advantages__description--mod">
+            <b class="advantages__title advantages__title--mod">Там есть мост Дьявола</b>
+            
+            <p class="advantages__text advantages__text--mod">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__image" src="./img/photo-devil's-bridge-desktop.png" alt="Мост Дьявола" width="800"
-            height="256">
+          <picture class="advantages__picture advantages__picture--bridge">
+            <source srcset="img/bridge-desktop.png" media="(min-width: 1200px)" width="800" height="256">
+            <source srcset="img/bridge-tablet.png" media="(min-width: 768px)" width="512" height="256">
+            <img class="advantages__img advantages__img--bridge" src="img/bridge-mobile.png" alt="Городок Седона" width="320" height="260">
+          </picture>
         </li>
 
         <li class="advantages__item">
-          <b class="advantages__title">Небольщая площадь</b>
-          <p class="advantages__number">- №3 -</p>
-          <p class="advantages__text">Все интересные места находятся очень близко</p>
+          <div class="advantages__description">
+            <b class="advantages__title">Небольщая площадь</b>
+            
+            <p class="advantages__text">Все интересные места находятся очень близко</p>
+          </div>
         </li>
 
         <li class="advantages__item">
-          <b class="advantages__title">Красивая дорога</b>
-          <p class="advantages__number">- №4 -</p>
-          <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="advantages__description">
+            <b class="advantages__title">Красивая дорога</b>
+            
+            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
 
         <li class="advantages__item">
-          <b class="advantages__title">Мало туристов</b>
-          <p class="advantages__number">- №5 -</p>
-          <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+          <div class="advantages__description">
+            <b class="advantages__title">Мало туристов</b>
+            
+            <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </li>
       </ol>
     </section>

@@ -56,6 +56,15 @@
     padding-right: 30px;
     margin-top: 40px;
     margin-bottom: 65px;
+    
+    &:hover {
+        background-color: #669EC0;
+    }
+    
+    &:active {
+        background-color: #5496BD;
+        color: #81b5d4;
+    }
 
     @include tablet {
         width: 458px;
@@ -63,13 +72,4 @@
         margin-top: 0px;
         margin-bottom: 0px;
     }
-}
-
-.searching__button:hover {
-    background-color: #669EC0;
-}
-
-.searching__button:active {
-    background-color: #5496BD;
-    color: #81b5d4;
 }

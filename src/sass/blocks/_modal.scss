@@ -2,10 +2,8 @@
     text-align: center;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
+    border: none;
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     pointer-events: all;
 
     &--success {
@@ -14,6 +12,7 @@
         height: 323px;
         padding-top: 38px;
         display: none;
+        top: 27%;
 
         @include tablet {
             height: 350px;
@@ -27,6 +26,7 @@
         height: 280px;
         padding-top: 40px;
         display: none;
+        top: 27%;
 
         @include tablet {
             height: 350px;
@@ -107,8 +107,9 @@
 
 .modal__p {
     background-color: #f2f2f2;
-    width: 100%;
+    width: 105.2%;
     height: 100px;
+    margin-left: -16px;
 
     @include tablet {
         height: 145px;

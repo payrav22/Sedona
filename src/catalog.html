@@ -69,68 +69,82 @@
       <h2 class="visually-hidden">Фото</h2>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--vast">
-          <img class="gallery__image gallery__image--vast" src="./img/vast-desktop.png" alt="Народные просторы"
-            width="280" height="280">
+          <picture>
+            <source srcset="img/vast-desktop.png" media="(min-width: 1200px)" width="1200" height="400">
+            <source srcset="img/vast-tablet.png" media="(min-width: 768px)" width="648" height="400">
+            <img class="gallery__image gallery__image--vast" src="img/vast-mobile.png" alt="Неродные просторы"
+              width="280" height="280">
+          </picture>
           <div class="gallery__description gallery__description--vast">
             <blockquote class="gallery__blockquote">
               <cite class="gallery__title">Нeродные просторы</cite>
               <p class="gallery__text">Автор фото: Борис</p>
             </blockquote>
-            <button class="like__button like__button--vast" type="button">
-              <svg class="like__icon" width="23" height="21">
+            <button class="gallery__like-button gallery__like-button--vast" type="button">
+              <svg class="gallery__like-icon" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like" />
               </svg>
-              <span class="like__number">143</span>
+              <span class="gallery__like-number">143</span>
             </button>
           </div>
         </li>
 
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/plants-desktop.png" alt="Местная растительность" width="280"
-            height="280">
+          <picture>
+            <source srcset="img/plants-desktop.png" media="(min-width: 1200px)" width="400" height="267">
+            <source srcset="img/plants-tablet.png" media="(min-width: 768px)" width="324" height="267">
+            <img class="gallery__image" src="img/plants-mobile.png" alt="Растительность" width="280" height="280">
+          </picture>
           <div class="gallery__description gallery__description--plants">
             <blockquote class="gallery__blockquote">
               <cite class="gallery__title">Местная растительность</cite>
               <p class="gallery__text">Автор фото: Сергей</p>
             </blockquote>
-            <button class="like__button like__button--plants" type="button">
-              <svg class="like__icon" width="23" height="21">
+            <button class="gallery__like-button gallery__like-button--plants" type="button">
+              <svg class="gallery__like-icon" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like" />
               </svg>
-              <span class="like__number">143</span>
+              <span class="gallery__like-number">143</span>
             </button>
           </div>
         </li>
 
         <li class=" gallery__item">
-          <img class="gallery__image" src="./img/road-desktop.png" alt="Дорога на север" width="280" height="280">
+          <picture>
+            <source srcset="img/road-desktop.png" media="(min-width: 1200px)" width="400" height="267">
+            <source srcset="img/road-tablet.png" media="(min-width: 768px)" width="324" height="267">
+            <img class="gallery__image" src="img/road-mobile.png" alt="Дорога на севере" width="280" height="280">
+          </picture>
           <div class="gallery__description gallery__description--road">
             <blockquote class="gallery__blockquote">
               <cite class="gallery__title">Дорога на север</cite>
               <p class="gallery__text">Автор фото: Петр</p>
             </blockquote>
-            <button class="like__button like__button--road" type="button">
-              <svg class="like__icon" width="23" height="21">
+            <button class="gallery__like-button gallery__like-button--road" type="button">
+              <svg class="gallery__like-icon" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like" />
               </svg>
-              <span class="like__number">96</span>
+              <span class="gallery__like-number">96</span>
             </button>
           </div>
         </li>
 
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/devil's-bridge-desktop.png" alt="Мост Дьявола" width="280"
-            height="280">
+          <picture>
+            <source srcset="img/devil-bridge-desktop.png" media="(min-width: 1200px)" width="400" height="267">
+            <source srcset="img/devil-bridge-tablet.png" media="(min-width: 768px)" width="324" height="267">
+            <img class="gallery__image" src="img/devil-bridge-mobile.png" alt="Мост Дьявола" width="280" height="280">
+          </picture>
           <div class="gallery__description gallery__description--bridge">
             <blockquote class="gallery__blockquote">
               <cite class="gallery__title">Мост дьявола</cite>
               <p class="gallery__text">Автор фото: Антон</p>
             </blockquote>
-            <button class="like__button like__button--bridge" type="button">
-              <svg class="like__icon" width="23" height="21">
+            <button class="gallery__like-button gallery__like-button--bridge" type="button">
+              <svg class="gallery__like-icon" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like" />
               </svg>
-              <span class="like__number">254</span>
+              <span class="gallery__like-number">254</span>
             </button>
           </div>
         </li>
@@ -146,9 +160,9 @@
     <section class="gallery-video">
       <h2 class="visually-hidden">Видео</h2>
 
-      <img class="gallery-video__image" src="./img/video-sedona.png" alt="видео городка Седона">
+      <img class="gallery-video__image" src="img/video-sedona.png" alt="Видео Седоны">
       <div class="gallery-video__panel">
-        <div class="gallery-video__panel--range">
+        <div class="gallery-video__scroll">
           <input class="gallery-video__range" type="range">
         </div>
 

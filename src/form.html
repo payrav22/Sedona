@@ -168,6 +168,7 @@
       </fieldset>
 
       <button class="form__submit title" type="submit">Отправить отзыв</button>
+      <p class="form__warning">* — обязательные поля</p>
     </form>
   </main>
 
@@ -222,23 +223,21 @@
   </footer>
 
 
-  <section class="modal modal--success">
-    <h2 class="visually-hidden">Модальное окно</h2>
+  <dialog class="modal modal--success">
     <b class="modal__title">Ваш отзыв отправлен!</b>
     <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на
       сайте.</p>
     <p class="modal__p">
       <button class="modal__button modal__button--success">Закрыть окно</button>
     </p>
-  </section>
+  </dialog>
 
-  <section class="modal modal--failure">
-    <h2 class="visually-hidden">Модальное окно</h2>
+  <dialog class="modal modal--failure">
     <b class="modal__title">Что-то пошло не так!</b>
     <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <button class="modal__button modal__button--failure">Ок</button>
-  </section>
+  </dialog>
 
 
   <script src="js/main.js"></script>

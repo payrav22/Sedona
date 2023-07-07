@@ -3,9 +3,9 @@
     background-color: #FFFFFF;
 
     @include tablet {
+        height: 300px;
         display: flex;
         justify-content: space-between;
-        height: 300px;
     }
 }
 
@@ -25,14 +25,15 @@
         margin-bottom: 18px;
         text-align: center;
     }
-}
 
-.services__item--gift {
-    @include tablet {
-        margin-top: 5px;
-        order: 3;
+    &--gift {
+        @include tablet {
+            margin-top: 5px;
+            order: 3;
+        }
     }
 }
+
 
 .services__description {
     margin-top: -8px;
@@ -42,38 +43,38 @@
     @include tablet {
         display: inline-block;
     }
-}
 
-.services__link--house {
-    width: 80px;
-    height: 37px;
-
-    @include tablet {
+    &--house {
         width: 80px;
-        height: 72px;
-        margin-top: 60px;
+        height: 37px;
+    
+        @include tablet {
+            width: 80px;
+            height: 72px;
+            margin-top: 60px;
+        }
     }
-}
 
-.services__link--gift {
-    width: 80px;
-    height: 38px;
-
-    @include tablet {
+    &--gift {
         width: 80px;
-        height: 75px;
-        margin-top: 57px;
+        height: 38px;
+    
+        @include tablet {
+            width: 80px;
+            height: 75px;
+            margin-top: 57px;
+        }
     }
-}
-
-.services__link--burger {
-    width: 80px;
-    height: 35px;
-
-    @include tablet {
+    
+    &--burger {
         width: 80px;
-        height: 70px;
-        margin-top: 63px;
+        height: 35px;
+    
+        @include tablet {
+            width: 80px;
+            height: 70px;
+            margin-top: 63px;
+        }
     }
 }
 
